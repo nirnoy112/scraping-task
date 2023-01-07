@@ -1,11 +1,11 @@
 ## About This Project
 
-This is a NodeJS based application to scrape data from OTOMOTO (an automotive advertisement platform) using axios, cheerio and exeljs. The following requirements have been fulfilled:
+This is a NodeJS based application to scrape data from OTOMOTO (an automotive advertisement platform) using axios, cheerio and exceljs. The following requirements have been fulfilled:
 
--   Initial url https://www.otomoto.pl/ciezarowe/uzytkowe/mercedes-benz/od-2014/q-actros?search%5Bfilter_enum_damaged%5D=0&search%5Border%5D=created_at%3Adesc.
+-   Initial URL https://www.otomoto.pl/ciezarowe/uzytkowe/mercedes-benz/od-2014/q-actros?search%5Bfilter_enum_damaged%5D=0&search%5Border%5D=created_at%3Adesc.
 -   Add getNextPageUrl function to iterate over pages.
--   Add addItems function that fetches item urls + item ids (unique ids that the portal uses) from list page.
--   Add getTotalAdsCount function - shows how many total ads exist for the provided initial url.
+-   Add addItems function that fetches item URLs + item ids (unique ids that the portal uses) from list page.
+-   Add getTotalAdsCount function - shows how many total ads exist for the provided initial URL.
 -   Add scrapeTruckItem function - that scrapes the actual ads and parses into the format: item id, title, price, registration date, production date, mileage, power.
 -   Scrape all pages, all ads (Either scrapeAllAdsInConsole or scrapeAllAdsInExcelFile function can be called for this requirement).
 
@@ -35,7 +35,7 @@ This is a NodeJS based application to scrape data from OTOMOTO (an automotive ad
 
 -   Accessing more ads from this link than the limit allows (max 50 pages)?
 
-    The initial url shows only 10 pages of ads, it's within the limit and all pages can be accessed normally so I'm not sure what was meant by this question.
+    The initial URL shows only 10 pages of ads, it's within the limit and all pages can be accessed normally so I'm not sure what was meant by this question.
 
 -   What would be essential differences between puppeteer and playwright and which is better?
 
@@ -51,4 +51,4 @@ This is a NodeJS based application to scrape data from OTOMOTO (an automotive ad
 
 -   Other considerations?
 
-    'scrapeAllAdsInConsole' function to scrape all pages and ads shows the scraping process information and data within the console. But saving the data is one of the major goals of scraping so I've wrote a function named 'scrapeAllAdsInExcelFile' which allows to save all the scapped ads information in an excel file that can be passed to the function as a paramenter.
+    'scrapeAllAdsInConsole' function to scrape all pages and ads shows the scraping process information and data within the console. But saving the data is one of the major goals of scraping so I've wrote a function named 'scrapeAllAdsInExcelFile' which allows to save all the scrapped ads information in an excel file that can be passed to the function as a parameter.
